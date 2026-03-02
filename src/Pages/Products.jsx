@@ -7,10 +7,12 @@ import { MdOutlineShoppingBag } from "react-icons/md";
 import { addtocart, decreaseQty, increaseQty, removeCart } from '../Slice/cartSlice';
 import { IoClose } from "react-icons/io5";
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 const Products = () => {
     const dispatch = useDispatch()
+    const navigate = useNavigate()
     const [cartActive, setCartActive] = useState(false)
     const { products, isLoading, error } = useSelector(state => state.products)
     const cart = useSelector(state => state.cart.carts);
@@ -76,7 +78,7 @@ const Products = () => {
                         )
                     })}
 
-                    <button className='checkout-btn'><p>Checkout</p><span>{Math.floor(cartTotal)}</span></button>
+                    <button className='checkout-btn' onClick={() => navigate("/checkout")}><p>Checkout</p><span>{Math.floor(cartTotal)}</span></button>
                 </div>
             </section>
             <h1>Products</h1>
