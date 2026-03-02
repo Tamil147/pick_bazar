@@ -8,9 +8,9 @@ The application demonstrates product listing, cart functionality, and a checkout
 
 ## 🚀 Live Demo
 
-🔗 Live URL: https://your-project-name.vercel.app
+🔗 Live URL: (https://pick-bazar-ecom.vercel.app/)
 
-🔗 GitHub Repository: https://github.com/your-username/your-repo-name
+
 
 ---
 
